@@ -11,10 +11,5 @@
 
 	$htmlBody = $trafficController->doControll();
 
-
-	if(!isset($_GET)) {
-
-		$view = new HTMLView();
-		$view->echoHTML($htmlBody);
-
-	}
+	$view = new HTMLView();
+	$view->echoHTML($htmlBody);
