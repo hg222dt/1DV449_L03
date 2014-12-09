@@ -1,7 +1,7 @@
 <?php
 
-require_once("./View/TrafficView.php");
-require_once("./Model/TrafficModel.php");
+require_once("./view/TrafficView.php");
+require_once("./model/TrafficModel.php");
 
 /*
  * Kontroller-klass
@@ -23,7 +23,7 @@ class TrafficController {
 		try {
 			switch($this->trafficView->getUserAction()) {
 
-				case ACTION_GET_TRAFFIC_DATA_ASYNC:
+				case TrafficView::ACTION_GET_TRAFFIC_DATA_ASYNC:
 					echo $this->trafficModel->getTrafficDataAsync();
 					break;
 
@@ -32,7 +32,7 @@ class TrafficController {
 					break;
 			}	
 		} catch (Exception $e) {
-			return SiteView::MESSAGE_ERROR_FATAL;
+			return TrafficView::MESSAGE_ERROR_FATAL;
 		}
 	}
 }

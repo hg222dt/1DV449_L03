@@ -1,6 +1,6 @@
 <?php
 
-require_once("./Model/TrafficModel.php");
+require_once("./model/TrafficModel.php");
 
 /*
  * Klass som hanterar sitens vy-relaterade data
@@ -25,10 +25,10 @@ class TrafficView {
 	public function getUserAction() {
 
 		//Hämtar ut vilken användar-action som valts
-		switch(key($_GET['action'])) {
+		switch(key($_GET)) {
 
-			case SiteView::ACTION_GET_TRAFFIC_DATA_ASYNC:
-				return SiteView::ACTION_GET_TRAFFIC_DATA_ASYNC;
+			case TrafficView::ACTION_GET_TRAFFIC_DATA_ASYNC:
+				return TrafficView::ACTION_GET_TRAFFIC_DATA_ASYNC;
 				break;
 
 		}
@@ -52,3 +52,4 @@ class TrafficView {
 
 		return $ret;
 	}
+}

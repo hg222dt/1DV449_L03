@@ -1,18 +1,18 @@
 <?php
 
 	require_once("HTMLView.php");
-	require_once("Controller/SiteController.php");
+	require_once("controller/TrafficController.php");
 
 
 	session_start();
 
 
-	$siteController = new SiteController();
+	$trafficController = new TrafficController();
 
-	$htmlBody = $siteController->doControll();
+	$htmlBody = $trafficController->doControll();
 
 
-	if($_GET['action'] != "getTrafficDataAsync") {
+	if(!isset($_GET)) {
 
 		$view = new HTMLView();
 		$view->echoHTML($htmlBody);
