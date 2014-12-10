@@ -8,7 +8,7 @@ require_once("./model/TrafficModel.php");
  **/
 
 class TrafficView {
-
+/*
 	//Konstanter för användar-actions
 	const ACTION_GET_TRAFFIC_DATA_ASYNC = "getTrafficDataAsync";
 
@@ -33,7 +33,7 @@ class TrafficView {
 
 		}
 	}
-
+*/
 
 
 	public function showStartPage() {
@@ -42,12 +42,12 @@ class TrafficView {
 
 <h1>Trafik-info siten</h1>
 
-<h4>Här kommer kartan att visas.</h4> 
+<h4>Karta med trafikinfo från SR</h4> 
 
 <div id='map-canvas' style='height:100%'></div>
 
 <ul>
-	<h4>Här kommer alla trafikinfo att visas.</h4>
+	<li>Här kommer alla trafikinfo att visas.</li>
 </ul>
 
 		";

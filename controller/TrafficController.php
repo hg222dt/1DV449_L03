@@ -11,15 +11,18 @@ require_once("./model/TrafficModel.php");
 class TrafficController {
 
 	private $trafficView;
-	private $trafficModel;
+	//private $trafficModel;
 
 	public function __construct() {
-		$this->trafficModel = new TrafficModel();
+		//$this->trafficModel = new TrafficModel();
 		$this->trafficView = new TrafficView($this->trafficModel);
 	}
 
 	public function doControll() {
 
+		return $this->trafficView->showStartPage();
+
+/*
 		try {
 			switch($this->trafficView->getUserAction()) {
 
@@ -28,11 +31,14 @@ class TrafficController {
 					break;
 
 				default:
-					return $this->trafficView->showStartPage();
+					
 					break;
 			}	
 		} catch (Exception $e) {
 			return TrafficView::MESSAGE_ERROR_FATAL;
 		}
+
+*/
+
 	}
 }
