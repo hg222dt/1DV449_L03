@@ -39,15 +39,17 @@ class TrafficView {
 	public function showStartPage() {
 
 		$ret = "
+
 <h1>Trafik-info siten</h1>
 
-<!-- Google maps karta -->
-<h4>Här kommer kartan att visas.</h4>
+<h4>Här kommer kartan att visas.</h4> 
+
+<div id='map-canvas' style='height:100%'></div>
 
 <ul>
-	<!-- items för trafikinfo -->
 	<h4>Här kommer alla trafikinfo att visas.</h4>
 </ul>
+
 		";
 
 		return $ret;
