@@ -32,8 +32,8 @@ TRIN.getTrafficsDataAjax = function() {
 			//console.log(jsonData);
 
 			for(var message in jsonData.messages) {
-				//console.log(jsonData.messages[message].description);
-
+				
+				//console.log(jsonData.messages);
 				
 				trafficItemList.push(new trafficInfoItem(	
 											jsonData.messages[message].category,
@@ -53,11 +53,7 @@ TRIN.getTrafficsDataAjax = function() {
 
 			TRIN.trafficItems = trafficItemList;
 
-//			console.log(TRIN.trafficItems);
-
-			TRIN.addMarkers();
-
-			return trafficItemList;
+			TRIN.prepareDataForPage();
 
 		}).fail(function (jqXHR, textStatus) {
 
