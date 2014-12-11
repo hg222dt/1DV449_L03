@@ -25,8 +25,6 @@ class HTMLView {
 				<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
 				<!-- <link rel='stylesheet' type='text/css' href='css/styles.css'> -->
 
-
-
 			</head>
 			<body>
 				<div class='container' style='height:100%'>
@@ -34,11 +32,12 @@ class HTMLView {
 				</div>
 				<script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
                 <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js'></script>
+				<script src='js/TrafficInfoData.js'></script>
 				<script src='js/TrafficInfoBoard.js'></script>
 
                 <script type='text/javascript'src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC9HmJK7saacxO515M74v21H5PaDHXTNQQ'>
 				</script>
-				
+
 			</body>
 			</html>
 		";
