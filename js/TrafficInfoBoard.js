@@ -4,12 +4,76 @@ var TRIN = TRIN || {};
 
 	TRIN.currentInfoWindow = null;
 
+	TRIN.CATEGORY_ALL_CATEGORIES = "Alla kategorier";
+	TRIN.CATEGORY_ROAD_TRAFFIC = "Vägtrafik";
+	TRIN.CATEGORY_PUBLIC_TRANSPORT = "Kollektivtrafik";
+	TRIN.CATEGORY_PLANNED_INTERUPTION = "Planerad störning";
+	TRIN.CATEGORY_OTHERS_CATEGORY = "Övrigt";
+
+	TRIN.activeMarkers = [];
+
+
 	TRIN.initialize = function() {
+
+		
 
 		TRIN.createMap();
 
 		TRIN.getTrafficsData();
+
+		TRIN.assignButtons();
 	
+	}
+
+	TRIN.assignButtons = function() {
+
+   		var allCategoriesButton = document.getElementById(TRIN.CATEGORY_ALL_CATEGORIES);
+    
+    	allCategoriesButton.onclick = function () {
+    		TRIN.setCategoryToUI(TRIN.CATEGORY_ALL_CATEGORIES);
+    	};
+
+    	var roadTrafficButton = document.getElementById(TRIN.CATEGORY_ROAD_TRAFFIC);
+    
+    	roadTrafficButton.onclick = function () {
+    		TRIN.setCategoryToUI(TRIN.CATEGORY_ROAD_TRAFFIC);
+    	};
+
+    	var publicTransportButton = document.getElementById(TRIN.CATEGORY_PUBLIC_TRANSPORT);
+    
+    	publicTransportButton.onclick = function () {
+    		TRIN.setCategoryToUI(TRIN.CATEGORY_PUBLIC_TRANSPORT);
+    	};
+
+    	var plannedInteruptionButton = document.getElementById(TRIN.CATEGORY_PLANNED_INTERUPTION);
+    
+    	plannedInteruptionButton.onclick = function () {
+    		TRIN.setCategoryToUI(TRIN.CATEGORY_PLANNED_INTERUPTION);
+    	};
+
+    	var othersButton = document.getElementById(TRIN.CATEGORY_OTHERS_CATEGORY);
+    
+    	othersButton.onclick = function () {
+    		TRIN.setCategoryToUI(TRIN.CATEGORY_OTHERS_CATEGORY);
+    	};
+
+	
+	}
+
+	TRIN.setCategoryToUI = function(category) {
+
+		if(TRIN.activeMarkers.length > 0) {
+			TRIN.deleteMarkersFromMap();
+		}
+
+		TRIN.prepareDataForPage(category);
+	}
+
+	TRIN.deleteMarkersFromMap = function () {
+
+		for(var marker in TRIN.activeMarkers) {
+			TRIN.activeMarkers[marker].setMap(null);
+		}
 	}
 
 
@@ -25,20 +89,59 @@ var TRIN = TRIN || {};
 		TRIN.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 	}
 
-	TRIN.prepareDataForPage = function() {
+	TRIN.prepareDataForPage = function(category) {
 
-		TRIN.addMarkers();
+		TRIN.addMarkers(category);
 
-		TRIN.addDataToList();
-
+		TRIN.addDataToList(category);
 
 	}
 
 
-	TRIN.addMarkers = function() {
+	TRIN.addMarkers = function(category) {
 
+		var categoryInNumber;
+		
+		switch(category)
+		{
+			case TRIN.CATEGORY_ALL_CATEGORIES:
+				categoryInNumber = 4;
+				break;
 
-		for(var itemNumber in TRIN.trafficItems) {
+			case TRIN.CATEGORY_ROAD_TRAFFIC:
+				categoryInNumber = 0;
+				break;
+
+			case TRIN.CATEGORY_PUBLIC_TRANSPORT:
+				categoryInNumber = 1;
+				break;
+
+			case TRIN.CATEGORY_PLANNED_INTERUPTION:
+				categoryInNumber = 2;
+				break;
+
+			case TRIN.CATEGORY_OTHERS_CATEGORY:
+				categoryInNumber = 3;
+				break;
+
+		}
+
+		var itemsInCategory = [];
+
+		if(category == TRIN.CATEGORY_ALL_CATEGORIES) {
+			itemsInCategory = TRIN.trafficItems;
+		} else {
+
+			for(var itemNumber in TRIN.trafficItems) {
+				var currentItem = TRIN.trafficItems[itemNumber];
+
+				if(categoryInNumber == currentItem.category) {
+					itemsInCategory.push(currentItem);
+				}
+			}
+		}
+
+		for(var itemNumber in itemsInCategory) {
 
 
 			var currentItem = TRIN.trafficItems[itemNumber];
@@ -67,6 +170,7 @@ var TRIN = TRIN || {};
 
 			attachInfoWindow(marker, contentString);
 		
+			TRIN.activeMarkers.push(marker);
 		}
 
 	}

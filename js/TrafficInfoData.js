@@ -50,7 +50,7 @@ TRIN.getTrafficsDataAjax = function() {
 
 			TRIN.trafficItems = trafficItemList;
 
-			TRIN.prepareDataForPage();
+			TRIN.setCategoryToUI(TRIN.CATEGORY_ALL_CATEGORIES);
 
 		}).fail(function (jqXHR, textStatus) {
 
@@ -67,8 +67,6 @@ function trafficInfoItem(category, createddate, description, exactlocation, id, 
 	var date = new Date();
 
 	date.setTime(secondSplit);
-
-
 
 	this.category = category;
 	this.createddate = date;
