@@ -26,14 +26,11 @@ TRIN.getTrafficsDataAjax = function() {
 		data: { "action": "getLatest"}
 		}).done(function(data) {
 
-
 			var jsonData = JSON.parse(data);
 
 			//console.log(jsonData);
 
 			for(var message in jsonData.messages) {
-				
-				//console.log(jsonData.messages);
 				
 				trafficItemList.push(new trafficInfoItem(	
 											jsonData.messages[message].category,
@@ -64,8 +61,17 @@ TRIN.getTrafficsDataAjax = function() {
 
 
 function trafficInfoItem(category, createddate, description, exactlocation, id, latitude, longitude, priority, subcategory, title) {
+
+	var firstSplit = createddate.split('+')[0];
+	var secondSplit = firstSplit.split('(')[1];
+	var date = new Date();
+
+	date.setTime(secondSplit);
+
+
+
 	this.category = category;
-	this.createddate = createddate;
+	this.createddate = date;
 	this.description = description;
 	this.exactlocation = exactlocation;
 	this.id = id;

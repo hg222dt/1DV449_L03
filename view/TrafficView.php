@@ -42,13 +42,15 @@ class TrafficView {
 
 <h1>Trafik-info siten</h1>
 
-<h4>Karta med trafikinfo från SR</h4> 
-
-<div id='map-canvas' style='height:100%'></div>
-
 <ul>
 	<li>Här kommer alla trafikinfo att visas.</li>
 </ul>
+
+<h4>Karta med trafikinfo från SR</h4> 
+
+<div id='map-canvas' style='height:50%'></div>
+
+
 
 		";
 

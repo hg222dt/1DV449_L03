@@ -19,7 +19,7 @@ var TRIN = TRIN || {};
 
 	    var mapOptions = {
 	      center: myLatlng,
-	      zoom: 5
+	      zoom: 4
 	    };
 
 		TRIN.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -29,6 +29,7 @@ var TRIN = TRIN || {};
 
 		TRIN.addMarkers();
 
+		TRIN.addDataToList();
 
 
 	}
@@ -57,6 +58,7 @@ var TRIN = TRIN || {};
 			var contentString = '<div id="content">'+
 								      '<div id="siteNotice">'+
 								      '</div>'+
+								      '<p>' + currentItem.createddate + " |  Katergori: " + currentItem.subcategory + '</p>' +
 								      '<h1 id="firstHeading" class="firstHeading">' + currentItem.title + '</h1>'+
 								      '<div id="bodyContent">'+
 								      '<p>' + currentItem.description + '</p>'+
@@ -85,6 +87,11 @@ var TRIN = TRIN || {};
 		});
 	}
 
+	TRIN.addDataToList = function() {
+
+
+
+	}
 
 /*
 	TRIN.toggleBounce = function(marker) {
