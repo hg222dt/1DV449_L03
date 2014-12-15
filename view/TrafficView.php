@@ -62,9 +62,10 @@ class TrafficView {
 
 </div>
 
-<ul>
-	<li>Här kommer alla trafikinfo att visas.</li>
-</ul>
+
+<div id='eventsList'>
+
+</div>
 
 <h4>Karta med trafikinfo från SR</h4> 
 

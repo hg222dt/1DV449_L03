@@ -1,69 +1,76 @@
 <?php
 
 
-if($_GET['action'] == "getLatest") {
+class SrApiHandler {
 
-	$ret = curl_get_request("api.sr.se/api/v2/traffic/messages/?format=json");
+	private $useCacheAuto;
+	private $maxAmountOfResults;
+	private $url;
+	private $filename;
+	private $cacheTimeInMinutes;
+	private $tryCache = false;
 
-    echo $ret;
-}
+	public function __construct() {
+		$this->useCacheAuto = false;
+		$this->maxAmountOfResults = 100;
+		$this->url = "http://api.sr.se/api/v2/traffic/messages?format=json&sort=createddate[%20asc]&pagination=false&size=" . $this->maxAmountOfResults;
+		//$this->url = "http://api.sr.se/api/v2/traffic/messages?format=json&sort=createddate[ asc]&pagination=false&size=100";
+		$this->filename = "jsonFile.txt";
+		$this->cacheTimeInMinutes = 15;
+	}
 
 
-function curl_get_request($url) {
-        
+	public function useCacheOrNewCall() {
 
-        /*
+		$jsonFile = file_get_contents($this->filename);
 
-        $urlArr = array();
-        unset($urlArr);
-        $urlArr = array();
+		if($this->tryCache) {
+			if(!empty($jsonFile)) {
 
-        $dataArray = array();
-        unset($dateArray);
-        $dataArray = array();
+				$decodedJson = json_decode($jsonFile);
+				$timestamp = $decodedJson->timestamp;
+				$cacheTime = date('Y/m/d H:i:s', strtotime('- ' . $this->cacheTimeInMinutes . ' minutes'));
 
-        $countNumeric = false;
+				if($cacheTime < $timestamp && $this->useCacheAuto == false) {
+					return $this->curl_get_request($this->url);
+				} else {
+					return $decodedJson->retrievedData;
+				}
+			}
+		} else {
+			return $this->curl_get_request($this->url);
+		}
+	}
 
-        if(!is_array($tempUrlArr)) {
-        	array_push($urlArr, $tempUrlArr);
-        	$countNumeric = true;
-        } else {
-        	$urlArr = $tempUrlArr;
-        }
+	private function curl_get_request($url) {
 
-        */
+        $ch = curl_init();
 
-//        foreach ($urlArr as $url) {
+    	$userAgent = "";
 
-	        $ch = curl_init();
+	    $options = array(
+	        CURLOPT_RETURNTRANSFER => TRUE,
+	        CURLOPT_AUTOREFERER => TRUE,
+	        CURLOPT_USERAGENT => $userAgent,
+	        CURLOPT_URL => $url,
+	    );
+	    
+	    curl_setopt_array($ch, $options);
 
-	    	$userAgent = "";
+        $data = curl_exec($ch);
 
-		    $options = array(
-		        CURLOPT_RETURNTRANSFER => TRUE,  // Setting cURL's option to return the webpage data
-		        CURLOPT_AUTOREFERER => TRUE, // Automatically set the referer where following 'location' HTTP headers
-		        CURLOPT_USERAGENT => $userAgent,// Setting the useragent
-		        CURLOPT_URL => $url, // Setting cURL's URL option with the $url variable passed into the function
-		    );
-		    
-		    curl_setopt_array($ch, $options);
+        curl_close($ch);
 
-	        $data = curl_exec($ch);
-	        curl_close($ch);
-	        
-	        /*
-	        if($countNumeric) {
-	        	$dataArray[0] = $data;
-	    	} else {
-	    		$dataArray[$url] = $data;
-	    	}
+        $jsonData = array(
+        	'timestamp' => date('Y/m/d H:i:s'),
+        	'retrievedData' => $data
+        	);
 
-//	    }
+        $jsonData = json_encode($jsonData, JSON_PRETTY_PRINT);
 
-	    sizeof($dataArray);
-*/
-
-	    //var_dump($data);
+	    file_put_contents($this->filename, $jsonData);
 
 	    return $data;
     }
+
+}

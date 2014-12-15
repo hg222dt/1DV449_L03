@@ -20,11 +20,12 @@ TRIN.getTrafficsDataAjax = function() {
 	var trafficItemList = [];
 
     $.ajax({
-
 		type: "GET",
-		url: "model/srApiHandler.php",
+		url: "model/ajaxHandler.php",
 		data: { "action": "getLatest"}
 		}).done(function(data) {
+
+			console.log(data);
 
 			var jsonData = JSON.parse(data);
 
@@ -50,7 +51,7 @@ TRIN.getTrafficsDataAjax = function() {
 
 			TRIN.trafficItems = trafficItemList;
 
-			TRIN.setCategoryToUI(TRIN.CATEGORY_ALL_CATEGORIES);
+			TRIN.setCategoryToUI(TRIN.constants.CATEGORY_ALL_CATEGORIES);
 
 		}).fail(function (jqXHR, textStatus) {
 
@@ -78,5 +79,7 @@ function trafficInfoItem(category, createddate, description, exactlocation, id, 
 	this.priority = priority;
 	this.subcategory = subcategory;
 	this.title = title;
+	this.marker = null;
+	this.infowindow = null;
 }
 
