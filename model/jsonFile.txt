@@ -1,6 +1,30 @@
 {
-    "timestamp": "2014\/12\/16 16:27:15",
+    "timestamp": "2014\/12\/16 16:31:39",
     "retrievedData": [
+        {
+            "id": 1312381,
+            "priority": 3,
+            "createddate": "\/Date(1418743585243+0100)\/",
+            "title": "Rv40 Bor\u00e5s-G\u00f6teborg",
+            "exactlocation": "I h\u00f6jd med Bollebygd i riktning mot G\u00f6teborg",
+            "description": "Begr\u00e4nsad framkomlighet. Personbil i mittr\u00e4cket och mycket st\u00f6kigt vid platsen.",
+            "latitude": 57.6660939158,
+            "longitude": 12.5516248991,
+            "category": 0,
+            "subcategory": "Trafikolycka"
+        },
+        {
+            "id": 1312381,
+            "priority": 3,
+            "createddate": "\/Date(1418743585243+0100)\/",
+            "title": "Rv40 Bor\u00e5s-G\u00f6teborg",
+            "exactlocation": "I h\u00f6jd med Bollebygd i riktning mot G\u00f6teborg",
+            "description": "Begr\u00e4nsad framkomlighet. Personbil i mittr\u00e4cket och mycket st\u00f6kigt vid platsen.",
+            "latitude": 57.6660939158,
+            "longitude": 12.5516248991,
+            "category": 0,
+            "subcategory": "Trafikolycka"
+        },
         {
             "id": 1312392,
             "priority": 3,
@@ -72,30 +96,6 @@
             "longitude": 13.8363133874,
             "category": 0,
             "subcategory": "Trafikst\u00f6rning"
-        },
-        {
-            "id": 1312381,
-            "priority": 3,
-            "createddate": "\/Date(1418742526513+0100)\/",
-            "title": "Rv40 Bor\u00e5s-G\u00f6teborg",
-            "exactlocation": "I h\u00f6jd med Bollebygd i riktning mot G\u00f6teborg",
-            "description": "Begr\u00e4nsad framkomlighet. Personbil i mittr\u00e4cket och mycket st\u00f6kigt vid platsen.",
-            "latitude": 57.6660939158,
-            "longitude": 12.5516248991,
-            "category": 0,
-            "subcategory": "Trafikolycka"
-        },
-        {
-            "id": 1312381,
-            "priority": 3,
-            "createddate": "\/Date(1418742526513+0100)\/",
-            "title": "Rv40 Bor\u00e5s-G\u00f6teborg",
-            "exactlocation": "I h\u00f6jd med Bollebygd i riktning mot G\u00f6teborg",
-            "description": "Begr\u00e4nsad framkomlighet. Personbil i mittr\u00e4cket och mycket st\u00f6kigt vid platsen.",
-            "latitude": 57.6660939158,
-            "longitude": 12.5516248991,
-            "category": 0,
-            "subcategory": "Trafikolycka"
         },
         {
             "id": 1311662,
@@ -216,18 +216,6 @@
             "longitude": 14.211,
             "category": 3,
             "subcategory": "Vatten"
-        },
-        {
-            "id": 1312346,
-            "priority": 3,
-            "createddate": "\/Date(1418740889560+0100)\/",
-            "title": "Kung\u00e4lv",
-            "exactlocation": "Romelandav\u00e4gen",
-            "description": "Vid Tvibotten, bil av v\u00e4gen. R\u00e4ddningstj\u00e4nst p\u00e5 plats.",
-            "latitude": 57.898979187,
-            "longitude": 12.0055770874,
-            "category": 0,
-            "subcategory": "Trafikolycka"
         },
         {
             "id": 1312352,
@@ -686,18 +674,6 @@
             "subcategory": "Vatten"
         },
         {
-            "id": 1311945,
-            "priority": 3,
-            "createddate": "\/Date(1418703012317+0100)\/",
-            "title": "Sk\u00f6vde",
-            "exactlocation": "",
-            "description": "Linje 103, 200, 203, 211, 212, 217 och 506, flertal inst\u00e4llda turer fr\u00e5n Skara busstation. Detta beror p\u00e5 skadeg\u00f6relse",
-            "latitude": 58.4285347984,
-            "longitude": 13.9060788788,
-            "category": 1,
-            "subcategory": "Buss"
-        },
-        {
             "id": 1298812,
             "priority": 5,
             "createddate": "\/Date(1418663476977+0100)\/",
@@ -934,18 +910,6 @@
             "description": "Byggtrafik till och fr\u00e5n platsen.",
             "latitude": 61.147151947,
             "longitude": 14.6583099365,
-            "category": 0,
-            "subcategory": "V\u00e4garbete"
-        },
-        {
-            "id": 1309728,
-            "priority": 3,
-            "createddate": "\/Date(1418382115210+0100)\/",
-            "title": "Rv 44 Lidk\u00f6ping  ",
-            "exactlocation": "Ljunghedsrondellen-Trafikplats Lidk\u00f6ping C ",
-            "description": "R\u00e4ckesarbeten i b\u00e5da riktningar.",
-            "latitude": 58.4869003296,
-            "longitude": 13.1650829315,
             "category": 0,
             "subcategory": "V\u00e4garbete"
         },
@@ -1198,6 +1162,42 @@
             "description": "Begr\u00e4nsad framkomlighet och tillf\u00e4lligt nedsatt hastighet.",
             "latitude": 64.1586608887,
             "longitude": 19.8356742859,
+            "category": 0,
+            "subcategory": "V\u00e4garbete"
+        },
+        {
+            "id": 1302963,
+            "priority": 3,
+            "createddate": "\/Date(1417668939750+0100)\/",
+            "title": "Lv 204 Svart\u00e5 Herrg\u00e5rd - Mullhyttan b\u00e5da riktningarna ",
+            "exactlocation": "",
+            "description": "Arbete med v\u00e4gtrummor, ett k\u00f6rf\u00e4lt avst\u00e4ngt.",
+            "latitude": 59.1296005249,
+            "longitude": 14.6235942841,
+            "category": 0,
+            "subcategory": "V\u00e4garbete"
+        },
+        {
+            "id": 1286816,
+            "priority": 3,
+            "createddate": "\/Date(1417602621980+0100)\/",
+            "title": "E22 Kristianstad\u2013Tollarp",
+            "exactlocation": "Vid N\u00f6bbel\u00f6v i b\u00e5da riktningar",
+            "description": "Trafiken regleras med vakt och lots. ",
+            "latitude": 55.9665641785,
+            "longitude": 14.0731906891,
+            "category": 0,
+            "subcategory": "V\u00e4garbete"
+        },
+        {
+            "id": 1303358,
+            "priority": 3,
+            "createddate": "\/Date(1417590603657+0100)\/",
+            "title": "Uppsala",
+            "exactlocation": "Vattholmav\u00e4gen",
+            "description": "R\u00e5byv\u00e4gen och Gl:a Uppsalagatan. VA-arbeten. Ber\u00f6r b\u00e5de cyklister, fotg\u00e4ngare och biltrafik",
+            "latitude": 59.8661792419,
+            "longitude": 17.6415401914,
             "category": 0,
             "subcategory": "V\u00e4garbete"
         }
