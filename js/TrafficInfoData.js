@@ -26,8 +26,6 @@ TRIN.getTrafficsDataAjax = function() {
 		dataType : "json"
 		}).done(function(data) {
 
-			//console.log(data);
-
 			var messages = data['retrievedData'];
 
 			for(var message in messages) {

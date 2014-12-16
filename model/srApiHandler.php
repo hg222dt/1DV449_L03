@@ -11,11 +11,24 @@ class SrApiHandler {
 
 	public function __construct() {
 		$this->maxAmountOfResults = 100;
-		$this->url = "http://api.sr.se/api/v2/traffic/messages?format=json&pagination=false&size=" . $this->maxAmountOfResults;
+		$this->url = "http://api.sr.se/api/v2/traffic/messages?format=json&pagination=false";
 		$this->filename = "jsonFile.txt";
-		$this->cacheTimeInMinutes = 1;
+		$this->cacheTimeInMinutes = 5;
 	}
 
+
+	public function getCacheTimeInMinutesAsString() {
+		$ret = '-' . $this->cacheTimeInMinutes;
+
+		if($this->cacheTimeInMinutes > 1) {
+			$ret .= ' minutes';
+		} else {
+			$ret .= ' minute';
+		}
+		
+		return $ret;
+
+	}
 
 	public function useCacheOrNewCall() {
 
@@ -25,14 +38,13 @@ class SrApiHandler {
 			if(!empty($jsonFile)) {
 
 				$decodedJson = json_decode($jsonFile);
+
 				$timestamp = $decodedJson->timestamp;
-				$cacheTime = date('Y/m/d H:i:s', strtotime('- ' . $this->cacheTimeInMinutes . ' minutes'));
+				$cacheTime = date('Y/m/d H:i:s', strtotime($this->getCacheTimeInMinutesAsString()));
 
-
-				if($cacheTime < $timestamp) {
+				if($cacheTime > $timestamp) {
 					return $this->retrieveData();
 				} else {
-					//return $decodedJson->retrievedData;
 					return json_encode($decodedJson, JSON_PRETTY_PRINT);
 				}
 			}
@@ -59,7 +71,7 @@ class SrApiHandler {
 
 
 		$jsonData = array(
-    		'timestamp' => date('Y/m/d H:i:s'),
+    		'timestamp' => date('Y/m/d H:i:s', strtotime('now')),
     		'retrievedData' => $trimmedMessages
     	);
 
