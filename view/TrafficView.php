@@ -8,33 +8,6 @@ require_once("./model/TrafficModel.php");
  **/
 
 class TrafficView {
-/*
-	//Konstanter för användar-actions
-	const ACTION_GET_TRAFFIC_DATA_ASYNC = "getTrafficDataAsync";
-
-
-	private $trafficModel;
-	private $pageMessage;
-
-
-	public function __construct($trafficModel) {
-		$this->trafficModel = $trafficModel;
-	}
-
-
-	public function getUserAction() {
-
-		//Hämtar ut vilken användar-action som valts
-		switch(key($_GET)) {
-
-			case TrafficView::ACTION_GET_TRAFFIC_DATA_ASYNC:
-				return TrafficView::ACTION_GET_TRAFFIC_DATA_ASYNC;
-				break;
-
-		}
-	}
-*/
-
 
 	public function showStartPage() {
 
@@ -59,11 +32,11 @@ class TrafficView {
 	<div id='Övrigt'>
 		<a href='#'>Övrigt</a>
 	</div>
-
+	
 </div>
 
 
-<div id='eventsList'>
+<ul id='eventsList'>
 
 </div>
 

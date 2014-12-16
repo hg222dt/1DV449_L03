@@ -64,8 +64,6 @@ TRIN.setCategoryToUI = function(category) {
 
 	var itemsInCategory = TRIN.getItemsInCategory(category);
 
-	//console.log(itemsInCategory);
-
 	TRIN.addMarkers(itemsInCategory);
 
 	TRIN.addDataToList(itemsInCategory);
@@ -111,7 +109,6 @@ TRIN.addMarkers = function(itemsInCategory) {
 		    map: TRIN.map,
 		    title:'Hello World!',
 			draggable:true,
-		    //animation: google.maps.Animation.DROP
 		});
 		
 		
@@ -145,8 +142,6 @@ TRIN.attachInfoWindow = function (marker, contentString) {
 		if(TRIN.currentInfoWindow != null) {
 			TRIN.currentInfoWindow.close();
 		}
-
-//		console.log(infowindow);
 		
 		infowindow.open(marker.get('map'), marker);
 		TRIN.currentInfoWindow = infowindow;
@@ -166,11 +161,18 @@ TRIN.addDataToList = function(itemsInCategory) {
 
 	 	var item = itemsInCategory[itemNumber];
 
-	 	var newEventListElement = document.createElement("div");
+	 	var newEventListElement = document.createElement("li");
+
+	 	var listLink = document.createElement("a");
+
+	 	listLink.setAttribute("href", "#");
 
 		var eventDescription = document.createTextNode(item.title);
 
-		newEventListElement.appendChild(eventDescription);
+
+		listLink.appendChild(eventDescription);
+
+		newEventListElement.appendChild(listLink);
 
 		TRIN.setOpenInfowindowEvent(newEventListElement, item);
 
@@ -188,11 +190,8 @@ TRIN.setOpenInfowindowEvent = function (element, item) {
 			TRIN.currentInfoWindow.close();
 		}
 
-		//console.log(item.infowindow);
-
 		item.infowindow.open(item.marker.get('map'), item.marker);
 		TRIN.currentInfoWindow = item.infowindow;
-
 	}
 }
 

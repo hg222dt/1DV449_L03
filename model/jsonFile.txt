@@ -1,6 +1,90 @@
 {
-    "timestamp": "2014\/12\/16 15:03:18",
+    "timestamp": "2014\/12\/16 15:15:53",
     "retrievedData": [
+        {
+            "id": 1312334,
+            "priority": 3,
+            "createddate": "\/Date(1418738958270+0100)\/",
+            "title": "Lv164 Ed-Dals L\u00e5nged",
+            "exactlocation": "",
+            "description": "Trafikolycka, singel.",
+            "latitude": 58.928603286,
+            "longitude": 12.0380581598,
+            "category": 0,
+            "subcategory": "Trafikolycka"
+        },
+        {
+            "id": 1312326,
+            "priority": 3,
+            "createddate": "\/Date(1418738871800+0100)\/",
+            "title": "J\u00f6nk\u00f6ping",
+            "exactlocation": "Granatgatan p\u00e5 Rosenlund",
+            "description": "Granatgatan 34 och 36 \u00e4r utan vatten p.g.a. en vattenl\u00e4cka. En vattentunna st\u00e4lls ut. Reparationsarbete",
+            "latitude": 57.7794,
+            "longitude": 14.211,
+            "category": 3,
+            "subcategory": "Vatten"
+        },
+        {
+            "id": 1264256,
+            "priority": 3,
+            "createddate": "\/Date(1418738798280+0100)\/",
+            "title": "V\u00e4sterbottens l\u00e4n    ",
+            "exactlocation": "",
+            "description": "Ett sn\u00f6fallsomr\u00e5de ber\u00f6r de v\u00e4stra delarna av l\u00e4net under morgonen vilket medf\u00f6r risk f\u00f6r besv\u00e4rligt v\u00e4glag i form av lokal sn\u00f6halka. N\u00e4rmast kusten risk f\u00f6r lokal ishalka p\u00e5 grund av \u00e5terfrysning av v\u00e5ta v\u00e4gbanor.",
+            "latitude": 64.9181442,
+            "longitude": 18.94519,
+            "category": 0,
+            "subcategory": "Halkvarning"
+        },
+        {
+            "id": 1264248,
+            "priority": 3,
+            "createddate": "\/Date(1418738777733+0100)\/",
+            "title": "J\u00e4mtlands l\u00e4n      ",
+            "exactlocation": "",
+            "description": "Ett sn\u00f6fallsomr\u00e5de ber\u00f6r l\u00e4net under morgonen vilket medf\u00f6r risk f\u00f6r besv\u00e4rligt v\u00e4glag i form av lokal sn\u00f6halka.",
+            "latitude": 63.4809952,
+            "longitude": 14.326333,
+            "category": 0,
+            "subcategory": "Halkvarning"
+        },
+        {
+            "id": 1264254,
+            "priority": 3,
+            "createddate": "\/Date(1418738763000+0100)\/",
+            "title": "V\u00e4sternorrlands l\u00e4n  ",
+            "exactlocation": "   ",
+            "description": "N\u00e4rmast kusten risk f\u00f6r lokal ishalka p\u00e5 grund av \u00e5terfrysning av v\u00e5ta v\u00e4gbanor. I \u00f6vrigt i l\u00e4net risk f\u00f6r frosthalka.",
+            "latitude": 62.8307724,
+            "longitude": 17.636301,
+            "category": 0,
+            "subcategory": "Halkvarning"
+        },
+        {
+            "id": 1256516,
+            "priority": 3,
+            "createddate": "\/Date(1418738745047+0100)\/",
+            "title": "Norrbottens l\u00e4n ",
+            "exactlocation": " ",
+            "description": "Ett sn\u00f6fallsomr\u00e5de ber\u00f6r l\u00e4net under dagen vilket medf\u00f6r risk f\u00f6r besv\u00e4rligt v\u00e4glag i form av lokal sn\u00f6halka. N\u00e4rmast kusten risk f\u00f6r lokal ishalka p\u00e5 grund av \u00e5terfrysning av v\u00e5ta v\u00e4gbanor.",
+            "latitude": 66.74946,
+            "longitude": 21.38291,
+            "category": 0,
+            "subcategory": "Halkvarning"
+        },
+        {
+            "id": 1312330,
+            "priority": 3,
+            "createddate": "\/Date(1418738622493+0100)\/",
+            "title": "E22 Kalmar",
+            "exactlocation": "Strax norr om Karlsrorondellen",
+            "description": "Sops\u00e4kcar eller isoleringsbalar ligger p\u00e5 v\u00e4gen. Personal p\u00e5v\u00e4gtill plasten.",
+            "latitude": 56.6666374207,
+            "longitude": 16.2820301056,
+            "category": 0,
+            "subcategory": "Trafikst\u00f6rning"
+        },
         {
             "id": 1312238,
             "priority": 2,
@@ -86,18 +170,6 @@
             "subcategory": "T\u00e5g"
         },
         {
-            "id": 1312256,
-            "priority": 3,
-            "createddate": "\/Date(1418736874317+0100)\/",
-            "title": "E6 Kung\u00e4lv-G\u00f6teborg",
-            "exactlocation": "R\u00f6dbomotet [85] till Klarebergsmotet [84] ",
-            "description": "Uppfarten till bron d\u00e4r Oscarsleden och V\u00e4sterleden g\u00e5r ihop. R\u00e4ddningstj\u00e4nst p\u00e5 v\u00e4g.",
-            "latitude": 57.8572845459,
-            "longitude": 11.9902639389,
-            "category": 0,
-            "subcategory": "V\u00e4garbete"
-        },
-        {
             "id": 1312307,
             "priority": 3,
             "createddate": "\/Date(1418735678453+0100)\/",
@@ -134,18 +206,6 @@
             "subcategory": "Halkvarning"
         },
         {
-            "id": 1312294,
-            "priority": 3,
-            "createddate": "\/Date(1418735009530+0100)\/",
-            "title": "Lv 133 Tran\u00e5s\u2013Gr\u00e4nna",
-            "exactlocation": "",
-            "description": "Tr\u00e4dr\u00f6jning utmed v\u00e4gen. Kan vara tr\u00e5ngt att passera.",
-            "latitude": 57.9902954102,
-            "longitude": 14.8542585373,
-            "category": 0,
-            "subcategory": "V\u00e4garbete"
-        },
-        {
             "id": 1263645,
             "priority": 4,
             "createddate": "\/Date(1418734890733+0100)\/",
@@ -168,30 +228,6 @@
             "longitude": 14.307850984,
             "category": 0,
             "subcategory": "Trafikolycka"
-        },
-        {
-            "id": 1312296,
-            "priority": 3,
-            "createddate": "\/Date(1418734354980+0100)\/",
-            "title": "Skene",
-            "exactlocation": "\u00d6rbyv\u00e4gen",
-            "description": "En lastbil har tappat last p\u00e5 v\u00e4gen. Tr\u00e5ngt att passera platsen.",
-            "latitude": 57.4887222863,
-            "longitude": 12.643180717,
-            "category": 0,
-            "subcategory": "Trafikolycka"
-        },
-        {
-            "id": 1312278,
-            "priority": 3,
-            "createddate": "\/Date(1418734271517+0100)\/",
-            "title": "Rv 26\/47 J\u00f6nk\u00f6ping\u2013Mullsj\u00f6 ",
-            "exactlocation": "Ljunga",
-            "description": "En lastbil har f\u00e5tt stopp i rikning mot J\u00f6nk\u00f6ping och trafikanter m\u00e5ste g\u00e5 ut i m\u00f6tande k\u00f6rbana. Den dyker upp \u00f6veraskande f\u00f6r trafikanter p\u00e5v\u00e4g mot Mullsj\u00f6",
-            "latitude": 57.8682835571,
-            "longitude": 13.9556202057,
-            "category": 0,
-            "subcategory": "Trafikst\u00f6rning"
         },
         {
             "id": 1312265,
@@ -338,30 +374,6 @@
             "subcategory": "Halkvarning"
         },
         {
-            "id": 1312245,
-            "priority": 3,
-            "createddate": "\/Date(1418731518083+0100)\/",
-            "title": "E18 Kristinehamn-Karlskoga",
-            "exactlocation": "Bodalsbacken, mot Karlskoga",
-            "description": "Lastbil fast i backe.",
-            "latitude": 59.3118550058,
-            "longitude": 14.3152698536,
-            "category": 0,
-            "subcategory": "Trafikst\u00f6rning"
-        },
-        {
-            "id": 1312245,
-            "priority": 3,
-            "createddate": "\/Date(1418731518083+0100)\/",
-            "title": "E18 Kristinehamn-Karlskoga",
-            "exactlocation": "Bodalsbacken, mot Karlskoga",
-            "description": "Lastbil fast i backe.",
-            "latitude": 59.3118550058,
-            "longitude": 14.3152698536,
-            "category": 0,
-            "subcategory": "Trafikst\u00f6rning"
-        },
-        {
             "id": 1312203,
             "priority": 3,
             "createddate": "\/Date(1418730720953+0100)\/",
@@ -396,54 +408,6 @@
             "longitude": 15.0864382492,
             "category": 3,
             "subcategory": "Tele och data"
-        },
-        {
-            "id": 1264256,
-            "priority": 3,
-            "createddate": "\/Date(1418726364313+0100)\/",
-            "title": "V\u00e4sterbottens l\u00e4n   ",
-            "exactlocation": "",
-            "description": "Ett sn\u00f6fallsomr\u00e5de ber\u00f6r de v\u00e4stra delarna av l\u00e4net under morgonen vilket medf\u00f6r risk f\u00f6r besv\u00e4rligt v\u00e4glag i form av lokal sn\u00f6halka. N\u00e4rmast kusten risk f\u00f6r lokal ishalka p\u00e5 grund av \u00e5terfrysning av v\u00e5ta v\u00e4gbanor.",
-            "latitude": 64.9181442,
-            "longitude": 18.94519,
-            "category": 0,
-            "subcategory": "Halkvarning"
-        },
-        {
-            "id": 1256516,
-            "priority": 3,
-            "createddate": "\/Date(1418726363610+0100)\/",
-            "title": "Norrbottens l\u00e4n ",
-            "exactlocation": " ",
-            "description": "Ett sn\u00f6fallsomr\u00e5de ber\u00f6r l\u00e4net under dagen vilket medf\u00f6r risk f\u00f6r besv\u00e4rligt v\u00e4glag i form av lokal sn\u00f6halka. N\u00e4rmast kusten risk f\u00f6r lokal ishalka p\u00e5 grund av \u00e5terfrysning av v\u00e5ta v\u00e4gbanor.  ",
-            "latitude": 66.74946,
-            "longitude": 21.38291,
-            "category": 0,
-            "subcategory": "Halkvarning"
-        },
-        {
-            "id": 1264248,
-            "priority": 3,
-            "createddate": "\/Date(1418726362767+0100)\/",
-            "title": "J\u00e4mtlands l\u00e4n      ",
-            "exactlocation": "",
-            "description": "Ett sn\u00f6fallsomr\u00e5de ber\u00f6r l\u00e4net under morgonen vilket medf\u00f6r risk f\u00f6r besv\u00e4rligt v\u00e4glag i form av lokal sn\u00f6halka.",
-            "latitude": 63.4809952,
-            "longitude": 14.326333,
-            "category": 0,
-            "subcategory": "Halkvarning"
-        },
-        {
-            "id": 1264254,
-            "priority": 3,
-            "createddate": "\/Date(1418726360610+0100)\/",
-            "title": "V\u00e4sternorrlands l\u00e4n  ",
-            "exactlocation": "   ",
-            "description": "N\u00e4rmast kusten risk f\u00f6r lokal ishalka p\u00e5 grund av \u00e5terfrysning av v\u00e5ta v\u00e4gbanor. I \u00f6vrigt risk f\u00f6r frosthalka.",
-            "latitude": 62.8307724,
-            "longitude": 17.636301,
-            "category": 0,
-            "subcategory": "Halkvarning"
         },
         {
             "id": 1312044,
@@ -662,18 +626,6 @@
             "subcategory": "V\u00e4garbete"
         },
         {
-            "id": 1263775,
-            "priority": 3,
-            "createddate": "\/Date(1418705005783+0100)\/",
-            "title": "V\u00e4stmanlands l\u00e4n",
-            "exactlocation": "",
-            "description": "Risk f\u00f6r halka n\u00e4r v\u00e5ta v\u00e4gar fryser i samband med fallande temperatur.",
-            "latitude": 59.946888,
-            "longitude": 16.2786083,
-            "category": 0,
-            "subcategory": "Halkvarning"
-        },
-        {
             "id": 1309867,
             "priority": 3,
             "createddate": "\/Date(1418704208300+0100)\/",
@@ -816,18 +768,6 @@
             "longitude": 16.2063343006,
             "category": 0,
             "subcategory": "Trafikst\u00f6rning"
-        },
-        {
-            "id": 1311596,
-            "priority": 3,
-            "createddate": "\/Date(1418654387083+0100)\/",
-            "title": "Ramkvilla",
-            "exactlocation": "",
-            "description": "Vattnet avst\u00e4ngt tisdag 16\/12 kl 10-15 pga arbete.",
-            "latitude": 57.2032080419,
-            "longitude": 14.9553550122,
-            "category": 3,
-            "subcategory": "Vatten"
         },
         {
             "id": 1311566,
@@ -1198,6 +1138,66 @@
             "description": "Kabelarbete p\u00e5 str\u00e4ckan.",
             "latitude": 59.9397315979,
             "longitude": 17.8839378357,
+            "category": 0,
+            "subcategory": "V\u00e4garbete"
+        },
+        {
+            "id": 1302205,
+            "priority": 5,
+            "createddate": "\/Date(1418032183873+0100)\/",
+            "title": "Lv 910 \u00c5kers Styckebruk-Merl\u00e4nna",
+            "exactlocation": "",
+            "description": "V\u00e4garbete.",
+            "latitude": 59.2737121582,
+            "longitude": 17.0404129028,
+            "category": 0,
+            "subcategory": "V\u00e4garbete"
+        },
+        {
+            "id": 1306402,
+            "priority": 3,
+            "createddate": "\/Date(1418023690277+0100)\/",
+            "title": "E4 Sk\u00f6nsmon - Sk\u00f6nsberg",
+            "exactlocation": "",
+            "description": "Omfattande arbete med skyltning, risk f\u00f6r trafikst\u00f6rningar under dagtid p\u00e5 vardagar.",
+            "latitude": 62.3889389038,
+            "longitude": 17.3146839142,
+            "category": 0,
+            "subcategory": "V\u00e4garbete"
+        },
+        {
+            "id": 1300831,
+            "priority": 5,
+            "createddate": "\/Date(1417754562413+0100)\/",
+            "title": "Lv 240 Molkom-Sunnemo",
+            "exactlocation": "I h\u00f6jd med \u00c4lvsbacka",
+            "description": "Avst\u00e4ngt k\u00f6rf\u00e4lt och nedsatt hastighet.",
+            "latitude": 59.7087554932,
+            "longitude": 13.680062294,
+            "category": 0,
+            "subcategory": "V\u00e4garbete"
+        },
+        {
+            "id": 1302736,
+            "priority": 5,
+            "createddate": "\/Date(1417693443667+0100)\/",
+            "title": "Lv 363 R\u00f6d\u00e5n\u00e4s-Vindeln",
+            "exactlocation": "",
+            "description": "Begr\u00e4nsad framkomlighet och tillf\u00e4lligt nedsatt hastighet.",
+            "latitude": 64.1586608887,
+            "longitude": 19.8356742859,
+            "category": 0,
+            "subcategory": "V\u00e4garbete"
+        },
+        {
+            "id": 1302963,
+            "priority": 3,
+            "createddate": "\/Date(1417668939750+0100)\/",
+            "title": "Lv 204 Svart\u00e5 Herrg\u00e5rd - Mullhyttan b\u00e5da riktningarna ",
+            "exactlocation": "",
+            "description": "Arbete med v\u00e4gtrummor, ett k\u00f6rf\u00e4lt avst\u00e4ngt.",
+            "latitude": 59.1296005249,
+            "longitude": 14.6235942841,
             "category": 0,
             "subcategory": "V\u00e4garbete"
         }
