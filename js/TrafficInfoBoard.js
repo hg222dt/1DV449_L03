@@ -64,6 +64,8 @@ TRIN.setCategoryToUI = function(category) {
 
 	var itemsInCategory = TRIN.getItemsInCategory(category);
 
+	//console.log(itemsInCategory);
+
 	TRIN.addMarkers(itemsInCategory);
 
 	TRIN.addDataToList(itemsInCategory);
@@ -99,7 +101,7 @@ TRIN.addMarkers = function(itemsInCategory) {
 
 	for(var itemNumber in itemsInCategory) {
 
-		var currentItem = TRIN.trafficItems[itemNumber];
+		var currentItem = itemsInCategory[itemNumber];
 
 		var myLatlng = new google.maps.LatLng(currentItem.latitude,currentItem.longitude);
 
@@ -143,6 +145,8 @@ TRIN.attachInfoWindow = function (marker, contentString) {
 		if(TRIN.currentInfoWindow != null) {
 			TRIN.currentInfoWindow.close();
 		}
+
+//		console.log(infowindow);
 		
 		infowindow.open(marker.get('map'), marker);
 		TRIN.currentInfoWindow = infowindow;
@@ -156,6 +160,7 @@ TRIN.addDataToList = function(itemsInCategory) {
 	 var eventsList = document.getElementById("eventsList");
 
 	 eventsList.innerHTML = '';	 
+
 
 	 for(var itemNumber in itemsInCategory) {
 
@@ -182,6 +187,8 @@ TRIN.setOpenInfowindowEvent = function (element, item) {
 		if(TRIN.currentInfoWindow != null) {
 			TRIN.currentInfoWindow.close();
 		}
+
+		//console.log(item.infowindow);
 
 		item.infowindow.open(item.marker.get('map'), item.marker);
 		TRIN.currentInfoWindow = item.infowindow;

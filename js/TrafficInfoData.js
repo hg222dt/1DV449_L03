@@ -22,32 +22,28 @@ TRIN.getTrafficsDataAjax = function() {
     $.ajax({
 		type: "GET",
 		url: "model/ajaxHandler.php",
-		data: { "action": "getLatest"}
+		data: { "action": "getLatest"},
+		dataType : "json"
 		}).done(function(data) {
 
-			console.log(data);
+			var messages = data['retrievedData'];
 
-			var jsonData = JSON.parse(data);
+			for(var message in messages) {
 
-			//console.log(jsonData);
-
-			for(var message in jsonData.messages) {
-				
 				trafficItemList.push(new trafficInfoItem(	
-											jsonData.messages[message].category,
-											jsonData.messages[message].createddate,
-											jsonData.messages[message].description,
-											jsonData.messages[message].exactlocation,
-											jsonData.messages[message].id,
-											jsonData.messages[message].latitude,
-											jsonData.messages[message].longitude,
-											jsonData.messages[message].priority,
-											jsonData.messages[message].subcategory,
-											jsonData.messages[message].title
+											messages[message].category,
+											messages[message].createddate,
+											messages[message].description,
+											messages[message].exactlocation,
+											messages[message].id,
+											messages[message].latitude,
+											messages[message].longitude,
+											messages[message].priority,
+											messages[message].subcategory,
+											messages[message].title
 										));
 
 			}
-
 
 			TRIN.trafficItems = trafficItemList;
 

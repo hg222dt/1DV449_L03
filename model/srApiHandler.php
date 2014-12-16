@@ -13,8 +13,7 @@ class SrApiHandler {
 	public function __construct() {
 		$this->useCacheAuto = false;
 		$this->maxAmountOfResults = 100;
-		$this->url = "http://api.sr.se/api/v2/traffic/messages?format=json&sort=createddate[%20asc]&pagination=false&size=" . $this->maxAmountOfResults;
-		//$this->url = "http://api.sr.se/api/v2/traffic/messages?format=json&sort=createddate[ asc]&pagination=false&size=100";
+		$this->url = "http://api.sr.se/api/v2/traffic/messages?format=json&pagination=false&size=" . $this->maxAmountOfResults;
 		$this->filename = "jsonFile.txt";
 		$this->cacheTimeInMinutes = 15;
 	}
@@ -38,7 +37,32 @@ class SrApiHandler {
 				}
 			}
 		} else {
-			return $this->curl_get_request($this->url);
+
+			$ret = $this->curl_get_request($this->url);
+
+			$ret = json_decode($ret, true);
+
+			$messages = $ret['messages'];
+
+			$reversed = array_reverse($messages);
+
+			$trimmedMessages = array();
+
+			for ($i=0; $i < $this->maxAmountOfResults; $i++) { 
+				$trimmedMessages[$i] = $reversed[$i];
+			}
+
+
+			$jsonData = array(
+        		'timestamp' => date('Y/m/d H:i:s'),
+        		'retrievedData' => $trimmedMessages
+        	);
+
+        	$jsonData = json_encode($jsonData, JSON_PRETTY_PRINT);
+
+	   		file_put_contents($this->filename, $jsonData);
+
+			return $jsonData;
 		}
 	}
 
@@ -49,6 +73,7 @@ class SrApiHandler {
     	$userAgent = "";
 
 	    $options = array(
+			CURLOPT_HTTPHEADER => array('Accept' => 'application/json; charset=utf-8'),
 	        CURLOPT_RETURNTRANSFER => TRUE,
 	        CURLOPT_AUTOREFERER => TRUE,
 	        CURLOPT_USERAGENT => $userAgent,
@@ -60,15 +85,6 @@ class SrApiHandler {
         $data = curl_exec($ch);
 
         curl_close($ch);
-
-        $jsonData = array(
-        	'timestamp' => date('Y/m/d H:i:s'),
-        	'retrievedData' => $data
-        	);
-
-        $jsonData = json_encode($jsonData, JSON_PRETTY_PRINT);
-
-	    file_put_contents($this->filename, $jsonData);
 
 	    return $data;
     }
