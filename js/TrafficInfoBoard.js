@@ -84,7 +84,7 @@ TRIN.createMap = function() {
 
     var mapOptions = {
       center: myLatlng,
-      zoom: 4
+      zoom: 5
     };
 
 	TRIN.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -108,7 +108,7 @@ TRIN.addMarkers = function(itemsInCategory) {
 		    position: myLatlng,
 		    map: TRIN.map,
 		    title:'Hello World!',
-			draggable:true,
+			draggable:false,
 		});
 		
 		
@@ -242,18 +242,5 @@ TRIN.getItemsInCategory = function(category) {
 
 	return itemsInCategory;
 }
-
-/*
-TRIN.toggleBounce = function(marker) {
-
-  if (marker.getAnimation() != null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
-
-}
-*/
-
 
 window.onload = TRIN.initialize;
