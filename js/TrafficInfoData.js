@@ -25,7 +25,7 @@ TRIN.getTrafficsDataAjax = function() {
 		data: { "action": "getLatest"},
 		dataType : "json"
 		}).done(function(data) {
-
+			
 			var messages = data['retrievedData'];
 
 			for(var message in messages) {
@@ -50,9 +50,7 @@ TRIN.getTrafficsDataAjax = function() {
 			TRIN.setCategoryToUI(TRIN.constants.CATEGORY_ALL_CATEGORIES);
 
 		}).fail(function (jqXHR, textStatus) {
-
 			console.log("Faail: " + textStatus);
-
 		});
 }
 

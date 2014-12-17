@@ -13,7 +13,7 @@ class SrApiHandler {
 		$this->maxAmountOfResults = 100;
 		$this->url = "http://api.sr.se/api/v2/traffic/messages?format=json&pagination=false";
 		$this->filename = "jsonFile.txt";
-		$this->cacheTimeInMinutes = 5;
+		$this->cacheTimeInMinutes = 1;
 	}
 
 
@@ -64,6 +64,10 @@ class SrApiHandler {
 		$reversed = array_reverse($messages);
 
 		$trimmedMessages = array();
+
+		if(count($reversed) < $this->maxAmountOfResults) {
+			$this->maxAmountOfResults = count($reversed);
+		}
 
 		for ($i=0; $i < $this->maxAmountOfResults; $i++) { 
 			$trimmedMessages[$i] = $reversed[$i];
