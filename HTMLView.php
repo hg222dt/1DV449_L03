@@ -16,10 +16,6 @@ class HTMLView {
 		<!DOCTYPE html>
 		<html>
 			<head>
-				<style type='text/css'>
-					html { height: 100% }
-					body { height: 100%; margin: 0; padding: 0 }
-				</style>
 				<title>Trafik-siten!</title>
 				<meta http-equiv='content-type' content='text/html; charset=utf-8'>
 				<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>

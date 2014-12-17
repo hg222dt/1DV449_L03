@@ -1,6 +1,30 @@
 {
-    "timestamp": "2014\/12\/17 22:28:51",
+    "timestamp": "2014\/12\/17 22:59:00",
     "retrievedData": [
+        {
+            "id": 1313114,
+            "priority": 3,
+            "createddate": "\/Date(1418852177107+0100)\/",
+            "title": "Rv 92 Bjurholm-V\u00e4nn\u00e4s",
+            "exactlocation": "Braxselerakan",
+            "description": "Begr\u00e4nsad framkomlighet. Lastbil b\u00e4rgas.",
+            "latitude": 63.9321477431,
+            "longitude": 19.4605144758,
+            "category": 0,
+            "subcategory": "Trafikolycka"
+        },
+        {
+            "id": 1313315,
+            "priority": 3,
+            "createddate": "\/Date(1418852120117+0100)\/",
+            "title": "Rv 32 Aneby ",
+            "exactlocation": "I riktning mot Eksj\u00f6 mellan avfarterna mot Aneby",
+            "description": "Lastbil med sl\u00e4p som st\u00e5r illa till och blockerar s\u00f6derg\u00e5ende k\u00f6rf\u00e4lt i nedf\u00f6rsbacken.",
+            "latitude": 57.8350687142,
+            "longitude": 14.8628779287,
+            "category": 0,
+            "subcategory": "Trafikst\u00f6rning"
+        },
         {
             "id": 1264248,
             "priority": 3,
@@ -24,78 +48,6 @@
             "longitude": 17.636301,
             "category": 0,
             "subcategory": "Halkvarning"
-        },
-        {
-            "id": 1313088,
-            "priority": 2,
-            "createddate": "\/Date(1418850102493+0100)\/",
-            "title": "Rv 55 Str\u00e4ngn\u00e4s-Enk\u00f6ping",
-            "exactlocation": "P\u00e5 Toster\u00f6n vid infarten till Lilla Rullingen",
-            "description": "Helt fritt efter b\u00e4rgningen.",
-            "latitude": 59.4434432983,
-            "longitude": 17.019744873,
-            "category": 0,
-            "subcategory": "Trafikst\u00f6rning"
-        },
-        {
-            "id": 1313088,
-            "priority": 2,
-            "createddate": "\/Date(1418850102493+0100)\/",
-            "title": "Rv 55 Str\u00e4ngn\u00e4s-Enk\u00f6ping",
-            "exactlocation": "P\u00e5 Toster\u00f6n vid infarten till Lilla Rullingen",
-            "description": "Helt fritt efter b\u00e4rgningen.",
-            "latitude": 59.4434432983,
-            "longitude": 17.019744873,
-            "category": 0,
-            "subcategory": "Trafikst\u00f6rning"
-        },
-        {
-            "id": 1313088,
-            "priority": 2,
-            "createddate": "\/Date(1418850102493+0100)\/",
-            "title": "Rv 55 Str\u00e4ngn\u00e4s-Enk\u00f6ping",
-            "exactlocation": "P\u00e5 Toster\u00f6n vid infarten till Lilla Rullingen",
-            "description": "Helt fritt efter b\u00e4rgningen.",
-            "latitude": 59.4434432983,
-            "longitude": 17.019744873,
-            "category": 0,
-            "subcategory": "Trafikst\u00f6rning"
-        },
-        {
-            "id": 1313285,
-            "priority": 3,
-            "createddate": "\/Date(1418849856070+0100)\/",
-            "title": "\u00d6stra Gotland ",
-            "exactlocation": "Trakten av Katthammarsvik",
-            "description": "Blixthalka i omr\u00e5det. Var uppm\u00e4rksam p\u00e5 v\u00e4glaget.",
-            "latitude": 57.439622137,
-            "longitude": 18.7446978622,
-            "category": 0,
-            "subcategory": "Trafikst\u00f6rning"
-        },
-        {
-            "id": 1313315,
-            "priority": 3,
-            "createddate": "\/Date(1418849799803+0100)\/",
-            "title": "Rv 32 Aneby ",
-            "exactlocation": "I riktning mot Eksj\u00f6 mellan avfarterna mot Aneby",
-            "description": "Lastbil med sl\u00e4p som st\u00e5r illa till och blockerar s\u00f6derg\u00e5ende k\u00f6rf\u00e4lt i nedf\u00f6rsbacken.",
-            "latitude": 57.8350687142,
-            "longitude": 14.8628779287,
-            "category": 0,
-            "subcategory": "Trafikst\u00f6rning"
-        },
-        {
-            "id": 1313289,
-            "priority": 2,
-            "createddate": "\/Date(1418848702593+0100)\/",
-            "title": "Rv 50 Borl\u00e4nge-Ludvika",
-            "exactlocation": "",
-            "description": "V\u00e4gen fri efter b\u00e4rgning.",
-            "latitude": 60.3469137122,
-            "longitude": 15.3242933332,
-            "category": 0,
-            "subcategory": "Trafikst\u00f6rning"
         },
         {
             "id": 1313296,
@@ -180,18 +132,6 @@
             "longitude": 13.2893448,
             "category": 0,
             "subcategory": "Halkvarning"
-        },
-        {
-            "id": 1313114,
-            "priority": 3,
-            "createddate": "\/Date(1418843706507+0100)\/",
-            "title": "Rv 92 Bjurholm-V\u00e4nn\u00e4s",
-            "exactlocation": "Braxselerakan",
-            "description": "Begr\u00e4nsad framkomlighet. Lastbil b\u00e4rgas.",
-            "latitude": 63.9321477431,
-            "longitude": 19.4605144758,
-            "category": 0,
-            "subcategory": "Trafikolycka"
         },
         {
             "id": 1313233,
