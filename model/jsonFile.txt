@@ -1,6 +1,30 @@
 {
-    "timestamp": "2014\/12\/17 22:59:00",
+    "timestamp": "2014\/12\/17 23:28:31",
     "retrievedData": [
+        {
+            "id": 1313146,
+            "priority": 3,
+            "createddate": "\/Date(1418855167133+0100)\/",
+            "title": "Rv 50 Ludvika-Borl\u00e4nge",
+            "exactlocation": "",
+            "description": " Arbete med kantstolpar p\u00e5g\u00e5r fram till kl 02.",
+            "latitude": 60.4838027954,
+            "longitude": 15.4216375351,
+            "category": 0,
+            "subcategory": "V\u00e4garbete"
+        },
+        {
+            "id": 1313332,
+            "priority": 3,
+            "createddate": "\/Date(1418854862870+0100)\/",
+            "title": "Rv 73 Nyn\u00e4sv\u00e4gen ",
+            "exactlocation": "Avfarten ner p\u00e5 Arenav\u00e4geni riktning mot Olaus Magnus v\u00e4g och Hammarby",
+            "description": "Avfarten avst\u00e4ngd till kl 05.",
+            "latitude": 59.2967147827,
+            "longitude": 18.085849762,
+            "category": 0,
+            "subcategory": "V\u00e4garbete"
+        },
         {
             "id": 1313114,
             "priority": 3,
@@ -12,18 +36,6 @@
             "longitude": 19.4605144758,
             "category": 0,
             "subcategory": "Trafikolycka"
-        },
-        {
-            "id": 1313315,
-            "priority": 3,
-            "createddate": "\/Date(1418852120117+0100)\/",
-            "title": "Rv 32 Aneby ",
-            "exactlocation": "I riktning mot Eksj\u00f6 mellan avfarterna mot Aneby",
-            "description": "Lastbil med sl\u00e4p som st\u00e5r illa till och blockerar s\u00f6derg\u00e5ende k\u00f6rf\u00e4lt i nedf\u00f6rsbacken.",
-            "latitude": 57.8350687142,
-            "longitude": 14.8628779287,
-            "category": 0,
-            "subcategory": "Trafikst\u00f6rning"
         },
         {
             "id": 1264248,
@@ -48,30 +60,6 @@
             "longitude": 17.636301,
             "category": 0,
             "subcategory": "Halkvarning"
-        },
-        {
-            "id": 1313296,
-            "priority": 3,
-            "createddate": "\/Date(1418848582627+0100)\/",
-            "title": "S\u00f6dert\u00e4lje-Katrineholm",
-            "exactlocation": "S\u00f6dert\u00e4lje syd-Gnesta",
-            "description": "Omfattande signalfel str\u00e4ckan Gnesta-S\u00f6dert\u00e4lje Syd p\u00e5verkar t\u00e5gtrafiken Stockholm C-Katrineholm och omv\u00e4nt, samt SL Pendelt\u00e5g str\u00e4ckan Gnesta-S\u00f6dert\u00e4lje C och omv\u00e4nt. Vissa avg\u00e5ngar inst\u00e4llda.",
-            "latitude": 59.0747630737,
-            "longitude": 17.3691550852,
-            "category": 1,
-            "subcategory": "T\u00e5g"
-        },
-        {
-            "id": 1313296,
-            "priority": 3,
-            "createddate": "\/Date(1418848582627+0100)\/",
-            "title": "S\u00f6dert\u00e4lje-Katrineholm",
-            "exactlocation": "S\u00f6dert\u00e4lje syd-Gnesta",
-            "description": "Omfattande signalfel str\u00e4ckan Gnesta-S\u00f6dert\u00e4lje Syd p\u00e5verkar t\u00e5gtrafiken Stockholm C-Katrineholm och omv\u00e4nt, samt SL Pendelt\u00e5g str\u00e4ckan Gnesta-S\u00f6dert\u00e4lje C och omv\u00e4nt. Vissa avg\u00e5ngar inst\u00e4llda.",
-            "latitude": 59.0747630737,
-            "longitude": 17.3691550852,
-            "category": 1,
-            "subcategory": "T\u00e5g"
         },
         {
             "id": 1263774,
@@ -230,18 +218,6 @@
             "subcategory": "Trafikst\u00f6rning"
         },
         {
-            "id": 1313146,
-            "priority": 3,
-            "createddate": "\/Date(1418831619173+0100)\/",
-            "title": "Rv 50 Ludvika-Borl\u00e4nge",
-            "exactlocation": "",
-            "description": "Risk f\u00f6r k\u00f6er. Arbete med kantstolpar startar kl 18 och p\u00e5g\u00e5r fram till kl 02.",
-            "latitude": 60.4782943726,
-            "longitude": 15.4098386765,
-            "category": 0,
-            "subcategory": "V\u00e4garbete"
-        },
-        {
             "id": 1311489,
             "priority": 3,
             "createddate": "\/Date(1418824852267+0100)\/",
@@ -278,30 +254,6 @@
             "subcategory": "Trafikst\u00f6rning"
         },
         {
-            "id": 1313005,
-            "priority": 3,
-            "createddate": "\/Date(1418821620573+0100)\/",
-            "title": "Stenared",
-            "exactlocation": "Linje 539",
-            "description": " Ingen busstrafik p\u00e5 str\u00e4ckan S\u00f6dra H\u00e4cksj\u00f6b\u00e4cksv\u00e4gen - Stenared och \u00e5ter resten av trafikdygnet. Detta beror p\u00e5 r\u00e5dande v\u00e4glag.\n",
-            "latitude": 57.8047560525,
-            "longitude": 12.1948195699,
-            "category": 1,
-            "subcategory": "Buss"
-        },
-        {
-            "id": 1313005,
-            "priority": 3,
-            "createddate": "\/Date(1418821620573+0100)\/",
-            "title": "Stenared",
-            "exactlocation": "Linje 539",
-            "description": " Ingen busstrafik p\u00e5 str\u00e4ckan S\u00f6dra H\u00e4cksj\u00f6b\u00e4cksv\u00e4gen - Stenared och \u00e5ter resten av trafikdygnet. Detta beror p\u00e5 r\u00e5dande v\u00e4glag.\n",
-            "latitude": 57.8047560525,
-            "longitude": 12.1948195699,
-            "category": 1,
-            "subcategory": "Buss"
-        },
-        {
             "id": 1311169,
             "priority": 4,
             "createddate": "\/Date(1418819900103+0100)\/",
@@ -312,18 +264,6 @@
             "longitude": 11.964,
             "category": 3,
             "subcategory": "H\u00e4lsa och sjukv\u00e5rd"
-        },
-        {
-            "id": 1313002,
-            "priority": 3,
-            "createddate": "\/Date(1418817206250+0100)\/",
-            "title": "\u00d6xeryd",
-            "exactlocation": "Linje 530,",
-            "description": " Ingen busstrafik str\u00e4ckan \u00d6xeryd - H\u00e4ckenv\u00e4gen ",
-            "latitude": 57.7383528807,
-            "longitude": 12.2746602715,
-            "category": 1,
-            "subcategory": "Buss"
         },
         {
             "id": 1263646,
@@ -408,18 +348,6 @@
             "longitude": 15.561112048,
             "category": 3,
             "subcategory": "Buller"
-        },
-        {
-            "id": 1309524,
-            "priority": 4,
-            "createddate": "\/Date(1418792906230+0100)\/",
-            "title": "Ume\u00e5",
-            "exactlocation": "",
-            "description": "Blodbussen:  Ons 17\/12 p\u00e5 torget i Mal\u00e5 kl. 9:30-12 och kl. 13:30-18. Tors 18\/12 p\u00e5 torget i Mal\u00e5 kl. 8:30-12.",
-            "latitude": 63.7636583792,
-            "longitude": 20.4439970516,
-            "category": 3,
-            "subcategory": "H\u00e4lsa och sjukv\u00e5rd"
         },
         {
             "id": 1297072,

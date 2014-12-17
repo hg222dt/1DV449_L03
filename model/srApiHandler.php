@@ -70,6 +70,9 @@ class SrApiHandler {
 		}
 
 		for ($i=0; $i < $this->maxAmountOfResults; $i++) { 
+			strip_tags($reversed[$i]['title']);
+			strip_tags($reversed[$i]['description']);
+
 			$trimmedMessages[$i] = $reversed[$i];
 		}
 
