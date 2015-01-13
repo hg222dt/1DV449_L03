@@ -8,6 +8,7 @@ I nuläget har jag cachningstiden inställd på 5 minuter. Cachningen fungerar s
 
 ####Vad finns det för risker med din applikation?
 Ur användningssynpunkt: I nuläget finns det en potentiell risk att användaren antar att nya händelser kommer att poppa upp konstant. Då man ju måste uppdatera för att få en ny trafikhändelse, kan detta missförstånd möjligtvis ställa till problem då alla användaren inte är uppdaterade med de senaste händelserna.
+En annan mer teknisk risk, är att api:ern potentiellt skulle kunna lägga av att besvara sidans anrop. Det är i skarpa lägen då bra att ha en fallback-lösning som på något tar hand om detta beteende, och hanterar det ända fram till användaren, i form av meddelande eller annat.
 
 ####Hur har du tänkt kring säkerheten i din applikation?
 Jag gör nödvändig filtrering av utdata, med hjälp ut av strip_tags i mitt php-script. Utan detta riskerar man att illasinnade individer på andra sidan APIet skickar ut kod istället för text-strängar, som sen exempelvis kan bete sig som länkar och dirigera om användaren till helt andra webbplatser.
